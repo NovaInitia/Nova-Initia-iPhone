@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10J869" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Inq-1o-ns3">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="wZZ-Ck-guW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPh-9M-E2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fX2-2I-Bo5" customClass="NINotificationsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kap-AZ-g5K">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background.png" id="vJr-BW-5kf">
+                                <rect key="frame" x="0.0" y="-2" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="teambobtest's Doorway" lineBreakMode="tailTruncation" minimumFontSize="8" id="0Pq-VR-rii">
+                                <rect key="frame" x="8" y="20" width="222" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hint:" lineBreakMode="tailTruncation" minimumFontSize="10" id="svj-q3-agr">
+                                <rect key="frame" x="20" y="35" width="210" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="loZ-ih-57o">
+                                <rect key="frame" x="238" y="12" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.078865848481655121" green="0.080153949558734894" blue="0.84183675050735474" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPressed:" destination="fX2-2I-Bo5" eventType="touchUpInside" id="Jaa-bI-b5W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="barrel.ico" id="v9m-YR-r6y"/>
+                    <connections>
+                        <outlet property="doorwayButton" destination="loZ-ih-57o" id="6jb-i9-KZy"/>
+                        <outlet property="doorwayLabel" destination="0Pq-VR-rii" id="3Xt-Fa-ME2"/>
+                        <outlet property="hintLabel" destination="svj-q3-agr" id="siq-3p-W2g"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1094" y="36"/>
+        </scene>
+        <scene sceneID="94n-OS-2Oz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgl-8w-CIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="PHM-ZG-wuZ" customClass="NISettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9D-Pp-kF3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2ta-rS-LoE">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background.png" id="pT7-4q-WjD">
+                                        <rect key="frame" x="0.0" y="-45" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://www.google.com/" borderStyle="roundedRect" minimumFontSize="17" id="Scr-Pg-g5G">
+                                        <rect key="frame" x="112" y="16" width="188" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Web Home Page" lineBreakMode="tailTruncation" minimumFontSize="10" id="862-cf-eKR">
+                                        <rect key="frame" x="20" y="21" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="12"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="pW9-HG-j5X">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="yrr-Ga-J8Z">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="czl-u1-SLX">
+                                            <connections>
+                                                <action selector="savePressed:" destination="PHM-ZG-wuZ" id="vou-mW-BEr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="trap.ico" id="2OK-hz-D5O"/>
+                    <connections>
+                        <outlet property="homePage" destination="Scr-Pg-g5G" id="hZY-xL-QRV"/>
+                        <outlet property="scrollView" destination="2ta-rS-LoE" id="dsa-fZ-OiM"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1069" y="1301"/>
+        </scene>
+        <scene sceneID="8uO-DW-F46">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLw-jA-M40" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rhn-hP-EFN" customClass="NIHomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdP-jf-NbT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background500.png" id="AqO-fg-aUN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welcome," textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="eoI-44-vgj">
+                                <rect key="frame" x="20" y="28" width="280" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gWe-fs-apT">
+                                <rect key="frame" x="258" y="0.0" width="75" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="rhn-hP-EFN" eventType="touchUpInside" id="Ayl-zE-Oxt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sg" lineBreakMode="tailTruncation" minimumFontSize="10" id="LCx-qY-nHk">
+                                <rect key="frame" x="262" y="212" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.086540386080741882" green="0.70918369293212891" blue="0.0012373462086543441" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sg.ico" id="civ-82-XjO">
+                                <rect key="frame" x="240" y="217" width="14" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N7a-zY-9YI">
+                                <rect key="frame" x="-5" y="204" width="141" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <state key="normal" title="Go to Tradepost">
+                                    <color key="titleColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tradepostPressed:" destination="rhn-hP-EFN" eventType="touchUpInside" id="gH1-BE-DaI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9ot-DD-Cwn">
+                                <rect key="frame" x="-18" y="0.0" width="97" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <state key="normal" title="Messages">
+                                    <color key="titleColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="messagesPressed:" destination="rhn-hP-EFN" eventType="touchUpInside" id="dR7-e8-sqT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Level" lineBreakMode="tailTruncation" minimumFontSize="10" id="rjo-JC-xAY">
+                                <rect key="frame" x="15" y="74" width="166" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="exp" lineBreakMode="tailTruncation" minimumFontSize="10" id="ijC-Fx-QHb">
+                                <rect key="frame" x="240" y="82" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="defaultAvatar.png" id="W7S-js-RJa">
+                                <rect key="frame" x="20" y="107" width="90" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="homeTop.png" id="KRk-2h-TKd">
+                                <rect key="frame" x="20" y="253" width="280" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shields x" lineBreakMode="tailTruncation" minimumFontSize="8" id="k5v-Bh-juC">
+                                <rect key="frame" x="20" y="312" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Signposts x" lineBreakMode="tailTruncation" minimumFontSize="8" id="vBV-up-EBy">
+                                <rect key="frame" x="113" y="312" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Traps x" lineBreakMode="tailTruncation" minimumFontSize="8" id="cE4-O9-KWx">
+                                <rect key="frame" x="208" y="312" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="homeBottom.png" id="g9K-Ap-ZRG">
+                                <rect key="frame" x="20" y="333" width="280" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Doorways x" lineBreakMode="tailTruncation" minimumFontSize="8" id="5Bi-Uj-vHp">
+                                <rect key="frame" x="20" y="390" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spiders x" lineBreakMode="tailTruncation" minimumFontSize="8" id="O9u-Pq-rXe">
+                                <rect key="frame" x="113" y="390" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Barrels x" lineBreakMode="tailTruncation" minimumFontSize="8" id="CTG-C0-Hcr">
+                                <rect key="frame" x="208" y="390" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="shield.ico" id="gRV-yr-Uda"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="W7S-js-RJa" id="qpa-5F-tRL"/>
+                        <outlet property="barrelsLabel" destination="CTG-C0-Hcr" id="wHP-vo-mVw"/>
+                        <outlet property="classNameLabel" destination="rjo-JC-xAY" id="K6E-bG-h2B"/>
+                        <outlet property="doorwaysLabel" destination="5Bi-Uj-vHp" id="bFL-Ge-xKr"/>
+                        <outlet property="expLabel" destination="ijC-Fx-QHb" id="7e8-wf-i64"/>
+                        <outlet property="sgLabel" destination="LCx-qY-nHk" id="5gA-4S-A2y"/>
+                        <outlet property="shieldsLabel" destination="k5v-Bh-juC" id="ono-jJ-DId"/>
+                        <outlet property="signpostsLabel" destination="vBV-up-EBy" id="AU0-Uf-ttT"/>
+                        <outlet property="spidersLabel" destination="O9u-Pq-rXe" id="bSC-la-A6f"/>
+                        <outlet property="trapsLabel" destination="cE4-O9-KWx" id="G0V-Ai-OvV"/>
+                        <outlet property="welcomeLabel" destination="eoI-44-vgj" id="Oqn-QY-dVb"/>
+                        <segue destination="Inq-1o-ns3" kind="modal" identifier="logout" modalTransitionStyle="flipHorizontal" id="o1t-FC-lpn"/>
+                        <segue destination="4Ns-6a-uT0" kind="modal" identifier="sendMessage" modalTransitionStyle="crossDissolve" id="nfZ-0i-BaA"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1069" y="-1180"/>
+        </scene>
+        <scene sceneID="89G-AN-9Jq">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UOX-IN-xXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="4Ns-6a-uT0" customClass="NISendMessagePopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yku-jb-bFh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1Sj-8N-KUH">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background.png" id="rY9-AF-MrX">
+                                        <rect key="frame" x="0.0" y="-45" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="xry-fG-297">
+                                        <rect key="frame" x="97" y="26" width="203" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Iyl-qB-56E">
+                                        <rect key="frame" x="97" y="65" width="203" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="XmN-7F-cJU">
+                                        <rect key="frame" x="97" y="104" width="203" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="To:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Vq0-cp-MWn">
+                                        <rect key="frame" x="20" y="31" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Subject:" lineBreakMode="tailTruncation" minimumFontSize="10" id="gAo-fO-P4b">
+                                        <rect key="frame" x="20" y="70" width="63" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Message:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Qoj-hn-KcE">
+                                        <rect key="frame" x="20" y="109" width="74" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" id="tAq-T6-ClN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Send Message" id="fup-Oo-TvX">
+                                        <barButtonItem key="backBarButtonItem" title="back" id="65U-5r-wct"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="aYD-rP-xSc">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="4Ns-6a-uT0" id="Ifh-De-vEd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Send" id="IJE-am-c0b">
+                                            <connections>
+                                                <action selector="sendPressed:" destination="4Ns-6a-uT0" id="Qmn-za-UJ4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="XmN-7F-cJU" id="JeJ-5n-qau"/>
+                        <outlet property="subject" destination="Iyl-qB-56E" id="wOa-Mf-aub"/>
+                        <outlet property="to" destination="xry-fG-297" id="J6f-Uu-4P9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1507" y="-1180"/>
+        </scene>
+        <scene sceneID="nx9-cz-Pji">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsL-Gp-XN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="QzB-NX-zac" customClass="NIBarrelPopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMN-PE-d3f">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="GeT-th-VYp">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background700.png" id="e1z-ne-ont">
+                                        <rect key="frame" x="0.0" y="-2" width="320" height="700"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="0CG-gH-n6O">
+                                        <rect key="frame" x="88" y="20" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sg" lineBreakMode="tailTruncation" minimumFontSize="10" id="X3n-EM-8nL">
+                                        <rect key="frame" x="20" y="25" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="h7W-Fx-xEG">
+                                        <rect key="frame" x="88" y="59" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="s9g-eR-FH6">
+                                        <rect key="frame" x="88" y="98" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="kx7-xK-fqk">
+                                        <rect key="frame" x="88" y="137" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="H5a-eL-1aY">
+                                        <rect key="frame" x="88" y="176" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="AZ1-tq-gb0">
+                                        <rect key="frame" x="88" y="215" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" minimumFontSize="17" id="9qZ-jr-8gG">
+                                        <rect key="frame" x="88" y="254" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Leave A Message?" minimumFontSize="17" id="eTn-UM-Odr">
+                                        <rect key="frame" x="88" y="293" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label This Barrel?" minimumFontSize="17" id="cR3-dF-HqK">
+                                        <rect key="frame" x="88" y="332" width="212" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Traps" lineBreakMode="tailTruncation" minimumFontSize="10" id="iNl-RV-14b">
+                                        <rect key="frame" x="20" y="64" width="44" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Barrels" lineBreakMode="tailTruncation" minimumFontSize="10" id="iJ5-xg-U6u">
+                                        <rect key="frame" x="20" y="103" width="54" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Spiders" lineBreakMode="tailTruncation" minimumFontSize="10" id="ueu-TI-A2o">
+                                        <rect key="frame" x="20" y="142" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shields" lineBreakMode="tailTruncation" minimumFontSize="10" id="6Mn-JD-67a">
+                                        <rect key="frame" x="20" y="181" width="56" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Doorways" lineBreakMode="tailTruncation" minimumFontSize="10" id="sK0-XO-et6">
+                                        <rect key="frame" x="20" y="220" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Signposts" lineBreakMode="tailTruncation" minimumFontSize="10" id="NH6-3h-sdD">
+                                        <rect key="frame" x="20" y="259" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Message" lineBreakMode="tailTruncation" minimumFontSize="10" id="oc0-Db-swj">
+                                        <rect key="frame" x="20" y="298" width="69" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="itu-mw-syc">
+                                        <rect key="frame" x="20" y="337" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" id="ZhY-mX-QiB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Barrel" id="Qkm-rv-a5F">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="mFb-uc-12F">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="QzB-NX-zac" id="UHK-nc-Tyy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Deploy" id="neg-tm-jZF">
+                                            <connections>
+                                                <action selector="deployPressed:" destination="QzB-NX-zac" id="gvU-A2-8ZP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="barrel.ico" id="jcH-WO-BfI">
+                                <rect key="frame" x="192" y="12" width="25" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="barrels" destination="s9g-eR-FH6" id="LQL-0U-eLx"/>
+                        <outlet property="doorways" destination="AZ1-tq-gb0" id="AB9-y6-IqF"/>
+                        <outlet property="label" destination="cR3-dF-HqK" id="jMQ-87-4kX"/>
+                        <outlet property="message" destination="eTn-UM-Odr" id="oLA-BT-EKP"/>
+                        <outlet property="scrollView" destination="GeT-th-VYp" id="YVy-io-owM"/>
+                        <outlet property="sg" destination="0CG-gH-n6O" id="QCv-Or-pPq"/>
+                        <outlet property="shields" destination="H5a-eL-1aY" id="EDO-8d-t29"/>
+                        <outlet property="signposts" destination="9qZ-jr-8gG" id="Yol-1z-Hwy"/>
+                        <outlet property="spiders" destination="kx7-xK-fqk" id="WyL-B3-MXP"/>
+                        <outlet property="traps" destination="h7W-Fx-xEG" id="01j-AP-xXl"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1561" y="-560"/>
+        </scene>
+        <scene sceneID="Qg1-oD-jYP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etp-Zy-25D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="py7-sM-fNI" customClass="NISignpostPopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i8b-DK-cbh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8Zk-1W-g6E">
+                                <rect key="frame" x="0.0" y="44" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background500.png" id="2oU-Us-GgL">
+                                        <rect key="frame" x="2" y="1" width="320" height="500"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" id="xEC-lr-4Yj">
+                                        <rect key="frame" x="92" y="24" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" minimumFontSize="10" id="9Wu-Tl-7NX">
+                                        <rect key="frame" x="20" y="29" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comment" lineBreakMode="tailTruncation" minimumFontSize="10" id="O1H-6s-niR">
+                                        <rect key="frame" x="20" y="69" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" minimumFontSize="17" id="jC0-vg-CNW">
+                                        <rect key="frame" x="92" y="64" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="uXg-h0-DXe">
+                                        <rect key="frame" x="212" y="123" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NSFW?" lineBreakMode="tailTruncation" minimumFontSize="10" id="vGd-xZ-IoJ">
+                                        <rect key="frame" x="20" y="126" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" id="GGy-lb-2K9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Signpost" id="oLM-UE-2Rg">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="IRe-zR-7TA">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="py7-sM-fNI" id="vkF-Ou-Zsl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Deploy" id="9PQ-0v-6ci">
+                                            <connections>
+                                                <action selector="deployPressed:" destination="py7-sM-fNI" id="OfQ-z3-25f"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sign.ico" id="ooH-ve-u4F">
+                                <rect key="frame" x="206" y="12" width="25" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="comment" destination="jC0-vg-CNW" id="ufE-dX-abf"/>
+                        <outlet property="nsfw" destination="uXg-h0-DXe" id="vNG-D0-fj9"/>
+                        <outlet property="scrollView" destination="8Zk-1W-g6E" id="9fc-Lo-oZm"/>
+                        <outlet property="title" destination="xEC-lr-4Yj" id="mmj-FF-EHP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1913" y="-553"/>
+        </scene>
+        <scene sceneID="YjU-EF-QZu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgq-uO-Qdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="wAp-ST-5U7" customClass="NIDoorwayPopover" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctL-0b-ghs">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BLV-qq-rF8">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background500.png" id="vR4-BK-Pma">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="http://nova-initia.com/" minimumFontSize="17" id="YcR-Tn-uRY">
+                                        <rect key="frame" x="91" y="20" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hint" minimumFontSize="17" id="YrU-eO-sIQ">
+                                        <rect key="frame" x="91" y="59" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" minimumFontSize="17" id="6m8-ev-JVc">
+                                        <rect key="frame" x="91" y="98" width="199" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="URL" lineBreakMode="tailTruncation" minimumFontSize="10" id="b7F-oE-SXj">
+                                        <rect key="frame" x="20" y="25" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hint" lineBreakMode="tailTruncation" minimumFontSize="10" id="ffN-8R-UAq">
+                                        <rect key="frame" x="20" y="64" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comment" lineBreakMode="tailTruncation" minimumFontSize="10" id="3Xt-hy-X83">
+                                        <rect key="frame" x="20" y="103" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ne7-hL-bFu">
+                                        <rect key="frame" x="211" y="147" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="nOZ-Xu-usw">
+                                        <rect key="frame" x="211" y="194" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add to existing chain?" lineBreakMode="tailTruncation" minimumFontSize="10" id="Dbx-hL-brx">
+                                        <rect key="frame" x="20" y="150" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NSFW?" lineBreakMode="tailTruncation" minimumFontSize="10" id="5Yc-VA-bsw">
+                                        <rect key="frame" x="20" y="197" width="49" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                        <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" id="tNY-km-6mn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Doorway" id="FZZ-ev-pDP">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="pTp-Gf-5p4">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="wAp-ST-5U7" id="oHK-bS-iFC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Deploy" id="7r3-NS-Br1">
+                                            <connections>
+                                                <action selector="deployPressed:" destination="wAp-ST-5U7" id="huI-Gr-Zrh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="doorway.ico" id="J8x-Hh-Xso">
+                                <rect key="frame" x="205" y="12" width="25" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.21761509776115417" blue="0.51020407676696777" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="chain" destination="ne7-hL-bFu" id="YcL-GM-YkA"/>
+                        <outlet property="comment" destination="6m8-ev-JVc" id="Hvf-sv-C78"/>
+                        <outlet property="hint" destination="YrU-eO-sIQ" id="cdE-LI-bNS"/>
+                        <outlet property="nsfw" destination="nOZ-Xu-usw" id="iA7-JT-ZYT"/>
+                        <outlet property="scrollView" destination="BLV-qq-rF8" id="cKv-oh-v5n"/>
+                        <outlet property="url" destination="YcR-Tn-uRY" id="AZP-hf-SQE"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2269" y="-553"/>
+        </scene>
+        <scene sceneID="bd9-aK-yQZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bU-Yg-iYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hJc-z1-LAw" customClass="NIWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ljg-OB-ti1">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="al9-UC-0ex">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Flh-aR-JIe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt;" style="plain" id="bVg-Bn-vG1">
+                                        <connections>
+                                            <action selector="goBack" destination="al9-UC-0ex" id="Xj3-K6-XdD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=">" style="plain" id="Xwh-RP-hvx">
+                                        <connections>
+                                            <action selector="goForward" destination="al9-UC-0ex" id="3b8-Ce-fd3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" style="plain" id="957-me-9bu">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="1rz-G8-yyq">
+                                            <rect key="frame" x="56" y="7" width="175" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                            <connections>
+                                                <action selector="loadUrl:" destination="hJc-z1-LAw" eventType="editingDidEndOnExit" id="aWR-Yr-tfO"/>
+                                            </connections>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="refresh" id="Z7I-yX-4PQ">
+                                        <connections>
+                                            <action selector="reload" destination="al9-UC-0ex" id="Vsc-oM-wdV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" id="9jx-wb-q2P">
+                                        <connections>
+                                            <action selector="placeToolButtonPressed:" destination="hJc-z1-LAw" id="wax-1o-3qm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" image="spider.ico" id="ve7-B4-Hw7"/>
+                    <connections>
+                        <outlet property="backButton" destination="bVg-Bn-vG1" id="4sX-Ew-BLs"/>
+                        <outlet property="forwardButton" destination="Xwh-RP-hvx" id="0Gr-4A-iZL"/>
+                        <outlet property="placeToolButton" destination="9jx-wb-q2P" id="rXw-Qv-cF5"/>
+                        <outlet property="refreshButton" destination="Z7I-yX-4PQ" id="zen-LE-yrd"/>
+                        <outlet property="urlBar" destination="1rz-G8-yyq" id="0ny-n3-SwV"/>
+                        <outlet property="webView" destination="al9-UC-0ex" id="VJb-Jf-fxv"/>
+                        <segue destination="QzB-NX-zac" kind="modal" identifier="barrelPopover" modalTransitionStyle="crossDissolve" id="Kbp-g3-wbT"/>
+                        <segue destination="py7-sM-fNI" kind="modal" identifier="signpostPopover" modalTransitionStyle="crossDissolve" id="Ycw-qd-sel"/>
+                        <segue destination="wAp-ST-5U7" kind="modal" identifier="doorwayPopover" modalTransitionStyle="crossDissolve" id="EW8-ep-72m"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1094" y="-560"/>
+        </scene>
+        <scene sceneID="cgv-5Z-4yW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUu-JM-jK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2fC-d5-GTe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxu-NB-WZU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="sign.ico" id="bGa-nL-85N"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1094" y="650"/>
+        </scene>
+        <scene sceneID="15">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rhn-hP-EFN" kind="relationship" relationship="viewControllers" id="ObS-gk-6YZ"/>
+                        <segue destination="hJc-z1-LAw" kind="relationship" relationship="viewControllers" id="vAW-Ap-HzI"/>
+                        <segue destination="fX2-2I-Bo5" kind="relationship" relationship="viewControllers" id="WnZ-mB-Yf5"/>
+                        <segue destination="2fC-d5-GTe" kind="relationship" relationship="viewControllers" id="rQ7-jR-Aye"/>
+                        <segue destination="PHM-ZG-wuZ" kind="relationship" relationship="viewControllers" id="uc8-pg-rfc"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="360" y="-136"/>
+        </scene>
+        <scene sceneID="1n1-IH-dwG">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5n-xA-Wmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Inq-1o-ns3" customClass="NILoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J47-QZ-Xjk" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="background.png" id="YeD-r0-Vd5">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z5Y-DS-vkE">
+                                <rect key="frame" x="55" y="255" width="211" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Inq-1o-ns3" eventType="touchUpInside" id="Izu-4i-a4y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Log in to your character" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="E9b-9S-HId">
+                                <rect key="frame" x="72" y="115" width="177" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username..." minimumFontSize="17" id="bPB-jE-wJq">
+                                <rect key="frame" x="65" y="160" width="190" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="Inq-1o-ns3" eventType="editingDidEnd" id="fvl-0I-jDl"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password..." minimumFontSize="17" background="background.png" id="kls-gf-hYh">
+                                <rect key="frame" x="65" y="206" width="190" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint=""/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="textFieldReturn:" destination="Inq-1o-ns3" eventType="editingDidEnd" id="UNV-TJ-nAN"/>
+                                </connections>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="wQc-c1-tPc">
+                                <rect key="frame" x="170" y="322" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Remember me:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="RfJ-0Q-bQA">
+                                <rect key="frame" x="72" y="325" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="14"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nova Initia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EIP-ff-9ED">
+                                <rect key="frame" x="0.0" y="39" width="320" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="55"/>
+                                <color key="textColor" red="0.47448980808258057" green="0.25168946385383606" blue="0.025047320872545242" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fhb-fq-Ymg">
+                                <rect key="frame" x="120" y="411" width="81" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.0" green="0.14861403405666351" blue="0.48979592323303223" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gwq-m2-EvT" kind="modal" id="gde-4Y-wTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="Inq-1o-ns3" eventType="touchUpInside" id="u8v-4b-HDY"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="z5Y-DS-vkE" id="Vdl-oV-939"/>
+                        <outlet property="pwd" destination="kls-gf-hYh" id="shn-Ft-Zio"/>
+                        <outlet property="rememberMe" destination="wQc-c1-tPc" id="wd7-6L-fxP"/>
+                        <outlet property="uname" destination="bPB-jE-wJq" id="zYB-iU-e4U"/>
+                        <segue destination="4" kind="modal" identifier="loginSuccess" modalTransitionStyle="flipHorizontal" id="JaH-KW-zLf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-320" y="72"/>
+        </scene>
+        <scene sceneID="9oU-TT-deV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqH-Ov-eAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="gwq-m2-EvT" customClass="NIRegisterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lce-Vd-mAO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="JnV-2C-gP7">
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gwq-m2-EvT" id="NOp-F2-qbD"/>
+                                </connections>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" id="29x-OK-hzr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Registration" id="tnR-kX-Zv3">
+                                        <barButtonItem key="leftBarButtonItem" title="Login" id="xPT-Qo-uEn">
+                                            <connections>
+                                                <action selector="buttonPressed:" destination="gwq-m2-EvT" id="jWC-JV-PgU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="JnV-2C-gP7" id="tYk-3Y-CLy"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="82" y="903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="320" height="460"/>
+        <image name="background500.png" width="320" height="500"/>
+        <image name="background700.png" width="320" height="700"/>
+        <image name="barrel.ico" width="16" height="16"/>
+        <image name="defaultAvatar.png" width="150" height="150"/>
+        <image name="doorway.ico" width="16" height="16"/>
+        <image name="homeBottom.png" width="275" height="63"/>
+        <image name="homeTop.png" width="275" height="64"/>
+        <image name="sg.ico" width="16" height="16"/>
+        <image name="shield.ico" width="16" height="16"/>
+        <image name="sign.ico" width="16" height="16"/>
+        <image name="spider.ico" width="16" height="16"/>
+        <image name="trap.ico" width="16" height="16"/>
+    </resources>
+    <classes>
+        <class className="NIBarrelPopover" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NIBarrelPopover.h"/>
+            <relationships>
+                <relationship kind="outlet" name="barrels" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="doorways" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="label" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="message" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="sg" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="shields" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="signposts" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="spiders" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="traps" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NIDoorwayPopover" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NIDoorwayPopover.h"/>
+            <relationships>
+                <relationship kind="outlet" name="chain" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="comment" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="hint" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nsfw" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="url" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NIHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NIHomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logoutPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="tradepostPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="avatarImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="barrelsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="classNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="doorwaysLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="expLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sgLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="shieldsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="signpostsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="spidersLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="trapsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="welcomeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NILoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NILoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="loginPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="textFieldReturn:"/>
+                <relationship kind="outlet" name="loginButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pwd" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="rememberMe" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="uname" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NINotificationsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NINotificationsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="doorwayButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="doorwayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hintLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NIRegisterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NIRegisterViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NISendMessagePopover" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NISendMessagePopover.h"/>
+            <relationships>
+                <relationship kind="outlet" name="message" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subject" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="to" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NISettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NISettingsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="homePage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="NISignpostPopover" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NISignpostPopover.h"/>
+            <relationships>
+                <relationship kind="outlet" name="comment" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nsfw" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="title" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NIWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NIWebViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="launch:"/>
+                <relationship kind="action" name="loadUrl:"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="forwardButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="placeToolButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="refreshButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="urlBar" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

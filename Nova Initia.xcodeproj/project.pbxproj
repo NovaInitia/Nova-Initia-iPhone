@@ -1,0 +1,826 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BA868615580B4800F3C400 /* launchIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BA868515580B4800F3C400 /* launchIcon57.png */; };
+		00BA868915580B4C00F3C400 /* launchIconRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 00BA868815580B4C00F3C400 /* launchIconRetina.png */; };
+		00BA868B15580BA300F3C400 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA868A15580BA300F3C400 /* Parse.framework */; };
+		00BA868D15580CDD00F3C400 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA868C15580CDD00F3C400 /* AudioToolbox.framework */; };
+		00BA868F15580CE600F3C400 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA868E15580CE600F3C400 /* CFNetwork.framework */; };
+		00BA869115580CEC00F3C400 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA869015580CEC00F3C400 /* SystemConfiguration.framework */; };
+		00BA869315580CF300F3C400 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA869215580CF300F3C400 /* MobileCoreServices.framework */; };
+		00BA869515580D0100F3C400 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA869415580D0100F3C400 /* libz.1.1.3.dylib */; };
+		00BA869715580D0600F3C400 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA869615580D0600F3C400 /* Security.framework */; };
+		00BA869915580D0B00F3C400 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA869815580D0B00F3C400 /* QuartzCore.framework */; };
+		8CA75A5715563ED900EE02AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A5615563ED900EE02AB /* UIKit.framework */; };
+		8CA75A5915563ED900EE02AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A5815563ED900EE02AB /* Foundation.framework */; };
+		8CA75A5B15563ED900EE02AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A5A15563ED900EE02AB /* CoreGraphics.framework */; };
+		8CA75A6115563ED900EE02AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75A5F15563ED900EE02AB /* InfoPlist.strings */; };
+		8CA75A6315563ED900EE02AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A6215563ED900EE02AB /* main.m */; };
+		8CA75A6715563EDA00EE02AB /* NIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A6615563EDA00EE02AB /* NIAppDelegate.m */; };
+		8CA75A8015563EDB00EE02AB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A7F15563EDB00EE02AB /* SenTestingKit.framework */; };
+		8CA75A8115563EDB00EE02AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A5615563ED900EE02AB /* UIKit.framework */; };
+		8CA75A8215563EDB00EE02AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA75A5815563ED900EE02AB /* Foundation.framework */; };
+		8CA75A8A15563EDB00EE02AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75A8815563EDB00EE02AB /* InfoPlist.strings */; };
+		8CA75A8D15563EDB00EE02AB /* Nova_InitiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A8C15563EDB00EE02AB /* Nova_InitiaTests.m */; };
+		8CA75A9715563F3900EE02AB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75A9615563F3900EE02AB /* MainStoryboard.storyboard */; };
+		8CA75AB015563FEF00EE02AB /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A9915563FEC00EE02AB /* LoginModel.m */; };
+		8CA75AB115563FEF00EE02AB /* NIBarrelPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A9B15563FED00EE02AB /* NIBarrelPopover.m */; };
+		8CA75AB215563FEF00EE02AB /* NIDoorwayPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A9D15563FED00EE02AB /* NIDoorwayPopover.m */; };
+		8CA75AB315563FEF00EE02AB /* NIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75A9F15563FED00EE02AB /* NIHomeViewController.m */; };
+		8CA75AB415563FEF00EE02AB /* NILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AA115563FED00EE02AB /* NILoginViewController.m */; };
+		8CA75AB515563FEF00EE02AB /* NIRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AA315563FEE00EE02AB /* NIRegisterViewController.m */; };
+		8CA75AB615563FEF00EE02AB /* NISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AA515563FEE00EE02AB /* NISettingsViewController.m */; };
+		8CA75AB715563FEF00EE02AB /* NISignpostPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AA715563FEE00EE02AB /* NISignpostPopover.m */; };
+		8CA75AB815563FEF00EE02AB /* NIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AA915563FEE00EE02AB /* NIWebViewController.m */; };
+		8CA75AB915563FEF00EE02AB /* NOVA_INITIA.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AAB15563FEE00EE02AB /* NOVA_INITIA.m */; };
+		8CA75ABA15563FEF00EE02AB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AAE15563FEE00EE02AB /* User.m */; };
+		8CA75AD51556401200EE02AB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75ABD1556401200EE02AB /* NSObject+SBJson.m */; };
+		8CA75AD61556401200EE02AB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AC01556401200EE02AB /* SBJsonParser.m */; };
+		8CA75AD71556401200EE02AB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AC21556401200EE02AB /* SBJsonStreamParser.m */; };
+		8CA75AD81556401200EE02AB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AC41556401200EE02AB /* SBJsonStreamParserAccumulator.m */; };
+		8CA75AD91556401200EE02AB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AC61556401200EE02AB /* SBJsonStreamParserAdapter.m */; };
+		8CA75ADA1556401200EE02AB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AC81556401200EE02AB /* SBJsonStreamParserState.m */; };
+		8CA75ADB1556401200EE02AB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75ACA1556401200EE02AB /* SBJsonStreamWriter.m */; };
+		8CA75ADC1556401200EE02AB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75ACC1556401200EE02AB /* SBJsonStreamWriterAccumulator.m */; };
+		8CA75ADD1556401200EE02AB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75ACE1556401200EE02AB /* SBJsonStreamWriterState.m */; };
+		8CA75ADE1556401200EE02AB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AD01556401200EE02AB /* SBJsonTokeniser.m */; };
+		8CA75ADF1556401200EE02AB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AD21556401200EE02AB /* SBJsonUTF8Stream.m */; };
+		8CA75AE01556401200EE02AB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75AD41556401200EE02AB /* SBJsonWriter.m */; };
+		8CA75AFB1556403A00EE02AB /* barrel.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE21556403A00EE02AB /* barrel.ico */; };
+		8CA75AFC1556403A00EE02AB /* barrelFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE31556403A00EE02AB /* barrelFailed.png */; };
+		8CA75AFD1556403A00EE02AB /* barrelFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE41556403A00EE02AB /* barrelFound.png */; };
+		8CA75AFE1556403A00EE02AB /* barrelSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE51556403A00EE02AB /* barrelSet.png */; };
+		8CA75AFF1556403A00EE02AB /* doorway.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE61556403A00EE02AB /* doorway.ico */; };
+		8CA75B001556403A00EE02AB /* doorwayFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AE71556403A00EE02AB /* doorwayFailed.png */; };
+		8CA75B041556403A00EE02AB /* sg.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AEB1556403A00EE02AB /* sg.ico */; };
+		8CA75B051556403A00EE02AB /* shield.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AEC1556403A00EE02AB /* shield.ico */; };
+		8CA75B061556403A00EE02AB /* shield.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AED1556403A00EE02AB /* shield.png */; };
+		8CA75B071556403A00EE02AB /* shieldFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AEE1556403A00EE02AB /* shieldFailed.png */; };
+		8CA75B081556403A00EE02AB /* sign.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AEF1556403A00EE02AB /* sign.ico */; };
+		8CA75B091556403A00EE02AB /* signpostBlocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF01556403A00EE02AB /* signpostBlocked.png */; };
+		8CA75B0A1556403A00EE02AB /* signpostFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF11556403A00EE02AB /* signpostFailed.png */; };
+		8CA75B0B1556403A00EE02AB /* signpostSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF21556403A00EE02AB /* signpostSet.png */; };
+		8CA75B0C1556403A00EE02AB /* spider.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF31556403A00EE02AB /* spider.ico */; };
+		8CA75B0D1556403A00EE02AB /* spiderFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF41556403A00EE02AB /* spiderFailed.png */; };
+		8CA75B0E1556403A00EE02AB /* spiderSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF51556403A00EE02AB /* spiderSet.png */; };
+		8CA75B0F1556403A00EE02AB /* spiderTriggered.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF61556403A00EE02AB /* spiderTriggered.png */; };
+		8CA75B101556403A00EE02AB /* trap.ico in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF71556403A00EE02AB /* trap.ico */; };
+		8CA75B111556403A00EE02AB /* trapFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF81556403A00EE02AB /* trapFailed.png */; };
+		8CA75B121556403A00EE02AB /* trapSet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AF91556403A00EE02AB /* trapSet.png */; };
+		8CA75B131556403A00EE02AB /* trapTriggered.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75AFA1556403A00EE02AB /* trapTriggered.png */; };
+		8CA75B171556404F00EE02AB /* crypto-md5.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B141556404F00EE02AB /* crypto-md5.js */; };
+		8CA75B181556404F00EE02AB /* nifunctions.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B151556404F00EE02AB /* nifunctions.js */; };
+		8CA75B191556404F00EE02AB /* toolbar.js in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B161556404F00EE02AB /* toolbar.js */; };
+		8CA75B27155649D400EE02AB /* doorwaySet.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B26155649D400EE02AB /* doorwaySet.png */; };
+		8CA75B2A15564D6B00EE02AB /* homeBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B2815564D6B00EE02AB /* homeBottom.png */; };
+		8CA75B2E15565FE900EE02AB /* NISendMessagePopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75B2D15565FE800EE02AB /* NISendMessagePopover.m */; };
+		8CA75B351556E3AF00EE02AB /* homeTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B341556E3AF00EE02AB /* homeTop.png */; };
+		8CA75B9315571A9500EE02AB /* defaultAvatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B9215571A9500EE02AB /* defaultAvatar.png */; };
+		8CA75B9915572EE200EE02AB /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B9815572EE200EE02AB /* background.png */; };
+		8CA75B9D1557360800EE02AB /* background500.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B9B1557360800EE02AB /* background500.png */; };
+		8CA75B9E1557360800EE02AB /* background700.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75B9C1557360800EE02AB /* background700.png */; };
+		8CA75BAC1557809700EE02AB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75BAB1557809700EE02AB /* Default.png */; };
+		8CA75BAF1557815400EE02AB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75BAE1557815400EE02AB /* Default@2x.png */; };
+		8CA75BB1155781CF00EE02AB /* backgroundSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75BB0155781CF00EE02AB /* backgroundSmall.png */; };
+		8CA75BB3155787F600EE02AB /* backgroundLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CA75BB2155787F600EE02AB /* backgroundLarge.png */; };
+		8CA75BC61557FE0800EE02AB /* NINotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA75BC51557FE0700EE02AB /* NINotificationsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CA75A8315563EDB00EE02AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA75A4915563ED900EE02AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CA75A5115563ED900EE02AB;
+			remoteInfo = "Nova Initia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BA868515580B4800F3C400 /* launchIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchIcon57.png; sourceTree = "<group>"; };
+		00BA868815580B4C00F3C400 /* launchIconRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchIconRetina.png; sourceTree = "<group>"; };
+		00BA868A15580BA300F3C400 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		00BA868C15580CDD00F3C400 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00BA868E15580CE600F3C400 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		00BA869015580CEC00F3C400 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		00BA869215580CF300F3C400 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		00BA869415580D0100F3C400 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		00BA869615580D0600F3C400 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		00BA869815580D0B00F3C400 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8CA75A5215563ED900EE02AB /* Nova Initia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nova Initia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA75A5615563ED900EE02AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8CA75A5815563ED900EE02AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8CA75A5A15563ED900EE02AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CA75A5E15563ED900EE02AB /* Nova Initia-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nova Initia-Info.plist"; sourceTree = "<group>"; };
+		8CA75A6015563ED900EE02AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CA75A6215563ED900EE02AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CA75A6415563ED900EE02AB /* Nova Initia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nova Initia-Prefix.pch"; sourceTree = "<group>"; };
+		8CA75A6515563EDA00EE02AB /* NIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NIAppDelegate.h; sourceTree = "<group>"; };
+		8CA75A6615563EDA00EE02AB /* NIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NIAppDelegate.m; sourceTree = "<group>"; };
+		8CA75A7E15563EDB00EE02AB /* Nova InitiaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nova InitiaTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA75A7F15563EDB00EE02AB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CA75A8715563EDB00EE02AB /* Nova InitiaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nova InitiaTests-Info.plist"; sourceTree = "<group>"; };
+		8CA75A8915563EDB00EE02AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8CA75A8B15563EDB00EE02AB /* Nova_InitiaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nova_InitiaTests.h; sourceTree = "<group>"; };
+		8CA75A8C15563EDB00EE02AB /* Nova_InitiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nova_InitiaTests.m; sourceTree = "<group>"; };
+		8CA75A9615563F3900EE02AB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8CA75A9815563FEC00EE02AB /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		8CA75A9915563FEC00EE02AB /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		8CA75A9A15563FED00EE02AB /* NIBarrelPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIBarrelPopover.h; sourceTree = "<group>"; };
+		8CA75A9B15563FED00EE02AB /* NIBarrelPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIBarrelPopover.m; sourceTree = "<group>"; };
+		8CA75A9C15563FED00EE02AB /* NIDoorwayPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDoorwayPopover.h; sourceTree = "<group>"; };
+		8CA75A9D15563FED00EE02AB /* NIDoorwayPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDoorwayPopover.m; sourceTree = "<group>"; };
+		8CA75A9E15563FED00EE02AB /* NIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIHomeViewController.h; sourceTree = "<group>"; };
+		8CA75A9F15563FED00EE02AB /* NIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIHomeViewController.m; sourceTree = "<group>"; };
+		8CA75AA015563FED00EE02AB /* NILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NILoginViewController.h; sourceTree = "<group>"; };
+		8CA75AA115563FED00EE02AB /* NILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NILoginViewController.m; sourceTree = "<group>"; };
+		8CA75AA215563FED00EE02AB /* NIRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIRegisterViewController.h; sourceTree = "<group>"; };
+		8CA75AA315563FEE00EE02AB /* NIRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIRegisterViewController.m; sourceTree = "<group>"; };
+		8CA75AA415563FEE00EE02AB /* NISettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISettingsViewController.h; sourceTree = "<group>"; };
+		8CA75AA515563FEE00EE02AB /* NISettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISettingsViewController.m; sourceTree = "<group>"; };
+		8CA75AA615563FEE00EE02AB /* NISignpostPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISignpostPopover.h; sourceTree = "<group>"; };
+		8CA75AA715563FEE00EE02AB /* NISignpostPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISignpostPopover.m; sourceTree = "<group>"; };
+		8CA75AA815563FEE00EE02AB /* NIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIWebViewController.h; sourceTree = "<group>"; };
+		8CA75AA915563FEE00EE02AB /* NIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIWebViewController.m; sourceTree = "<group>"; };
+		8CA75AAA15563FEE00EE02AB /* NOVA_INITIA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NOVA_INITIA.h; sourceTree = "<group>"; };
+		8CA75AAB15563FEE00EE02AB /* NOVA_INITIA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NOVA_INITIA.m; sourceTree = "<group>"; };
+		8CA75AAC15563FEE00EE02AB /* ToolType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolType.h; sourceTree = "<group>"; };
+		8CA75AAD15563FEE00EE02AB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8CA75AAE15563FEE00EE02AB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8CA75AAF15563FEE00EE02AB /* UserClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserClass.h; sourceTree = "<group>"; };
+		8CA75ABC1556401200EE02AB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		8CA75ABD1556401200EE02AB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		8CA75ABE1556401200EE02AB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		8CA75ABF1556401200EE02AB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		8CA75AC01556401200EE02AB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		8CA75AC11556401200EE02AB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		8CA75AC21556401200EE02AB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		8CA75AC31556401200EE02AB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		8CA75AC41556401200EE02AB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		8CA75AC51556401200EE02AB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		8CA75AC61556401200EE02AB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		8CA75AC71556401200EE02AB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		8CA75AC81556401200EE02AB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		8CA75AC91556401200EE02AB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		8CA75ACA1556401200EE02AB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		8CA75ACB1556401200EE02AB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		8CA75ACC1556401200EE02AB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		8CA75ACD1556401200EE02AB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		8CA75ACE1556401200EE02AB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		8CA75ACF1556401200EE02AB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		8CA75AD01556401200EE02AB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		8CA75AD11556401200EE02AB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		8CA75AD21556401200EE02AB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		8CA75AD31556401200EE02AB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		8CA75AD41556401200EE02AB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		8CA75AE21556403A00EE02AB /* barrel.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = barrel.ico; sourceTree = "<group>"; };
+		8CA75AE31556403A00EE02AB /* barrelFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelFailed.png; sourceTree = "<group>"; };
+		8CA75AE41556403A00EE02AB /* barrelFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelFound.png; sourceTree = "<group>"; };
+		8CA75AE51556403A00EE02AB /* barrelSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barrelSet.png; sourceTree = "<group>"; };
+		8CA75AE61556403A00EE02AB /* doorway.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = doorway.ico; sourceTree = "<group>"; };
+		8CA75AE71556403A00EE02AB /* doorwayFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doorwayFailed.png; sourceTree = "<group>"; };
+		8CA75AEB1556403A00EE02AB /* sg.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = sg.ico; sourceTree = "<group>"; };
+		8CA75AEC1556403A00EE02AB /* shield.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = shield.ico; sourceTree = "<group>"; };
+		8CA75AED1556403A00EE02AB /* shield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shield.png; sourceTree = "<group>"; };
+		8CA75AEE1556403A00EE02AB /* shieldFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shieldFailed.png; sourceTree = "<group>"; };
+		8CA75AEF1556403A00EE02AB /* sign.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = sign.ico; sourceTree = "<group>"; };
+		8CA75AF01556403A00EE02AB /* signpostBlocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signpostBlocked.png; sourceTree = "<group>"; };
+		8CA75AF11556403A00EE02AB /* signpostFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signpostFailed.png; sourceTree = "<group>"; };
+		8CA75AF21556403A00EE02AB /* signpostSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signpostSet.png; sourceTree = "<group>"; };
+		8CA75AF31556403A00EE02AB /* spider.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = spider.ico; sourceTree = "<group>"; };
+		8CA75AF41556403A00EE02AB /* spiderFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderFailed.png; sourceTree = "<group>"; };
+		8CA75AF51556403A00EE02AB /* spiderSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderSet.png; sourceTree = "<group>"; };
+		8CA75AF61556403A00EE02AB /* spiderTriggered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderTriggered.png; sourceTree = "<group>"; };
+		8CA75AF71556403A00EE02AB /* trap.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = trap.ico; sourceTree = "<group>"; };
+		8CA75AF81556403A00EE02AB /* trapFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trapFailed.png; sourceTree = "<group>"; };
+		8CA75AF91556403A00EE02AB /* trapSet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trapSet.png; sourceTree = "<group>"; };
+		8CA75AFA1556403A00EE02AB /* trapTriggered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trapTriggered.png; sourceTree = "<group>"; };
+		8CA75B141556404F00EE02AB /* crypto-md5.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "crypto-md5.js"; sourceTree = "<group>"; };
+		8CA75B151556404F00EE02AB /* nifunctions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = nifunctions.js; sourceTree = "<group>"; };
+		8CA75B161556404F00EE02AB /* toolbar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = toolbar.js; sourceTree = "<group>"; };
+		8CA75B26155649D400EE02AB /* doorwaySet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doorwaySet.png; sourceTree = "<group>"; };
+		8CA75B2815564D6B00EE02AB /* homeBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBottom.png; sourceTree = "<group>"; };
+		8CA75B2C15565FE600EE02AB /* NISendMessagePopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISendMessagePopover.h; sourceTree = "<group>"; };
+		8CA75B2D15565FE800EE02AB /* NISendMessagePopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISendMessagePopover.m; sourceTree = "<group>"; };
+		8CA75B341556E3AF00EE02AB /* homeTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeTop.png; sourceTree = "<group>"; };
+		8CA75B9215571A9500EE02AB /* defaultAvatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultAvatar.png; sourceTree = "<group>"; };
+		8CA75B9815572EE200EE02AB /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		8CA75B9B1557360800EE02AB /* background500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background500.png; sourceTree = "<group>"; };
+		8CA75B9C1557360800EE02AB /* background700.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background700.png; sourceTree = "<group>"; };
+		8CA75BAB1557809700EE02AB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8CA75BAE1557815400EE02AB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8CA75BB0155781CF00EE02AB /* backgroundSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundSmall.png; sourceTree = "<group>"; };
+		8CA75BB2155787F600EE02AB /* backgroundLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundLarge.png; sourceTree = "<group>"; };
+		8CA75BC41557FE0700EE02AB /* NINotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NINotificationsViewController.h; sourceTree = "<group>"; };
+		8CA75BC51557FE0700EE02AB /* NINotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NINotificationsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CA75A4F15563ED900EE02AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BA869915580D0B00F3C400 /* QuartzCore.framework in Frameworks */,
+				00BA869715580D0600F3C400 /* Security.framework in Frameworks */,
+				00BA869515580D0100F3C400 /* libz.1.1.3.dylib in Frameworks */,
+				8CA75A5B15563ED900EE02AB /* CoreGraphics.framework in Frameworks */,
+				00BA869315580CF300F3C400 /* MobileCoreServices.framework in Frameworks */,
+				00BA869115580CEC00F3C400 /* SystemConfiguration.framework in Frameworks */,
+				00BA868F15580CE600F3C400 /* CFNetwork.framework in Frameworks */,
+				00BA868D15580CDD00F3C400 /* AudioToolbox.framework in Frameworks */,
+				8CA75A5715563ED900EE02AB /* UIKit.framework in Frameworks */,
+				8CA75A5915563ED900EE02AB /* Foundation.framework in Frameworks */,
+				00BA868B15580BA300F3C400 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA75A7A15563EDB00EE02AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA75A8015563EDB00EE02AB /* SenTestingKit.framework in Frameworks */,
+				8CA75A8115563EDB00EE02AB /* UIKit.framework in Frameworks */,
+				8CA75A8215563EDB00EE02AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CA75A4715563ED900EE02AB = {
+			isa = PBXGroup;
+			children = (
+				00BA869815580D0B00F3C400 /* QuartzCore.framework */,
+				00BA869615580D0600F3C400 /* Security.framework */,
+				00BA869415580D0100F3C400 /* libz.1.1.3.dylib */,
+				00BA869215580CF300F3C400 /* MobileCoreServices.framework */,
+				00BA869015580CEC00F3C400 /* SystemConfiguration.framework */,
+				00BA868E15580CE600F3C400 /* CFNetwork.framework */,
+				00BA868C15580CDD00F3C400 /* AudioToolbox.framework */,
+				00BA868815580B4C00F3C400 /* launchIconRetina.png */,
+				00BA868515580B4800F3C400 /* launchIcon57.png */,
+				8CA75A5C15563ED900EE02AB /* Nova Initia */,
+				8CA75A8515563EDB00EE02AB /* Nova InitiaTests */,
+				8CA75A5515563ED900EE02AB /* Frameworks */,
+				8CA75A5315563ED900EE02AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CA75A5315563ED900EE02AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75A5215563ED900EE02AB /* Nova Initia.app */,
+				8CA75A7E15563EDB00EE02AB /* Nova InitiaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CA75A5515563ED900EE02AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00BA868A15580BA300F3C400 /* Parse.framework */,
+				8CA75A5615563ED900EE02AB /* UIKit.framework */,
+				8CA75A5815563ED900EE02AB /* Foundation.framework */,
+				8CA75A5A15563ED900EE02AB /* CoreGraphics.framework */,
+				8CA75A7F15563EDB00EE02AB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CA75A5C15563ED900EE02AB /* Nova Initia */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75A9615563F3900EE02AB /* MainStoryboard.storyboard */,
+				8CA75B251556451C00EE02AB /* javascript */,
+				8CA75B24155644CC00EE02AB /* ViewControllers */,
+				8CA75B23155644A800EE02AB /* Models */,
+				8CA75AE11556403A00EE02AB /* images */,
+				8CA75ABB1556401200EE02AB /* SBjson */,
+				8CA75A5D15563ED900EE02AB /* Supporting Files */,
+			);
+			path = "Nova Initia";
+			sourceTree = "<group>";
+		};
+		8CA75A5D15563ED900EE02AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75AAA15563FEE00EE02AB /* NOVA_INITIA.h */,
+				8CA75AAB15563FEE00EE02AB /* NOVA_INITIA.m */,
+				8CA75A6515563EDA00EE02AB /* NIAppDelegate.h */,
+				8CA75A6615563EDA00EE02AB /* NIAppDelegate.m */,
+				8CA75A5E15563ED900EE02AB /* Nova Initia-Info.plist */,
+				8CA75A5F15563ED900EE02AB /* InfoPlist.strings */,
+				8CA75A6215563ED900EE02AB /* main.m */,
+				8CA75A6415563ED900EE02AB /* Nova Initia-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CA75A8515563EDB00EE02AB /* Nova InitiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75A8B15563EDB00EE02AB /* Nova_InitiaTests.h */,
+				8CA75A8C15563EDB00EE02AB /* Nova_InitiaTests.m */,
+				8CA75A8615563EDB00EE02AB /* Supporting Files */,
+			);
+			path = "Nova InitiaTests";
+			sourceTree = "<group>";
+		};
+		8CA75A8615563EDB00EE02AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75A8715563EDB00EE02AB /* Nova InitiaTests-Info.plist */,
+				8CA75A8815563EDB00EE02AB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CA75ABB1556401200EE02AB /* SBjson */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75ABC1556401200EE02AB /* NSObject+SBJson.h */,
+				8CA75ABD1556401200EE02AB /* NSObject+SBJson.m */,
+				8CA75ABE1556401200EE02AB /* SBJson.h */,
+				8CA75ABF1556401200EE02AB /* SBJsonParser.h */,
+				8CA75AC01556401200EE02AB /* SBJsonParser.m */,
+				8CA75AC11556401200EE02AB /* SBJsonStreamParser.h */,
+				8CA75AC21556401200EE02AB /* SBJsonStreamParser.m */,
+				8CA75AC31556401200EE02AB /* SBJsonStreamParserAccumulator.h */,
+				8CA75AC41556401200EE02AB /* SBJsonStreamParserAccumulator.m */,
+				8CA75AC51556401200EE02AB /* SBJsonStreamParserAdapter.h */,
+				8CA75AC61556401200EE02AB /* SBJsonStreamParserAdapter.m */,
+				8CA75AC71556401200EE02AB /* SBJsonStreamParserState.h */,
+				8CA75AC81556401200EE02AB /* SBJsonStreamParserState.m */,
+				8CA75AC91556401200EE02AB /* SBJsonStreamWriter.h */,
+				8CA75ACA1556401200EE02AB /* SBJsonStreamWriter.m */,
+				8CA75ACB1556401200EE02AB /* SBJsonStreamWriterAccumulator.h */,
+				8CA75ACC1556401200EE02AB /* SBJsonStreamWriterAccumulator.m */,
+				8CA75ACD1556401200EE02AB /* SBJsonStreamWriterState.h */,
+				8CA75ACE1556401200EE02AB /* SBJsonStreamWriterState.m */,
+				8CA75ACF1556401200EE02AB /* SBJsonTokeniser.h */,
+				8CA75AD01556401200EE02AB /* SBJsonTokeniser.m */,
+				8CA75AD11556401200EE02AB /* SBJsonUTF8Stream.h */,
+				8CA75AD21556401200EE02AB /* SBJsonUTF8Stream.m */,
+				8CA75AD31556401200EE02AB /* SBJsonWriter.h */,
+				8CA75AD41556401200EE02AB /* SBJsonWriter.m */,
+			);
+			path = SBjson;
+			sourceTree = "<group>";
+		};
+		8CA75AE11556403A00EE02AB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75BB2155787F600EE02AB /* backgroundLarge.png */,
+				8CA75BAB1557809700EE02AB /* Default.png */,
+				8CA75BAE1557815400EE02AB /* Default@2x.png */,
+				8CA75B9B1557360800EE02AB /* background500.png */,
+				8CA75B9C1557360800EE02AB /* background700.png */,
+				8CA75BB0155781CF00EE02AB /* backgroundSmall.png */,
+				8CA75B9815572EE200EE02AB /* background.png */,
+				8CA75B9215571A9500EE02AB /* defaultAvatar.png */,
+				8CA75AE21556403A00EE02AB /* barrel.ico */,
+				8CA75AE31556403A00EE02AB /* barrelFailed.png */,
+				8CA75AE41556403A00EE02AB /* barrelFound.png */,
+				8CA75AE51556403A00EE02AB /* barrelSet.png */,
+				8CA75AE61556403A00EE02AB /* doorway.ico */,
+				8CA75AE71556403A00EE02AB /* doorwayFailed.png */,
+				8CA75B26155649D400EE02AB /* doorwaySet.png */,
+				8CA75B2815564D6B00EE02AB /* homeBottom.png */,
+				8CA75B341556E3AF00EE02AB /* homeTop.png */,
+				8CA75AEB1556403A00EE02AB /* sg.ico */,
+				8CA75AEC1556403A00EE02AB /* shield.ico */,
+				8CA75AED1556403A00EE02AB /* shield.png */,
+				8CA75AEE1556403A00EE02AB /* shieldFailed.png */,
+				8CA75AEF1556403A00EE02AB /* sign.ico */,
+				8CA75AF01556403A00EE02AB /* signpostBlocked.png */,
+				8CA75AF11556403A00EE02AB /* signpostFailed.png */,
+				8CA75AF21556403A00EE02AB /* signpostSet.png */,
+				8CA75AF31556403A00EE02AB /* spider.ico */,
+				8CA75AF41556403A00EE02AB /* spiderFailed.png */,
+				8CA75AF51556403A00EE02AB /* spiderSet.png */,
+				8CA75AF61556403A00EE02AB /* spiderTriggered.png */,
+				8CA75AF71556403A00EE02AB /* trap.ico */,
+				8CA75AF81556403A00EE02AB /* trapFailed.png */,
+				8CA75AF91556403A00EE02AB /* trapSet.png */,
+				8CA75AFA1556403A00EE02AB /* trapTriggered.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8CA75B23155644A800EE02AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75AAC15563FEE00EE02AB /* ToolType.h */,
+				8CA75AAF15563FEE00EE02AB /* UserClass.h */,
+				8CA75A9815563FEC00EE02AB /* LoginModel.h */,
+				8CA75A9915563FEC00EE02AB /* LoginModel.m */,
+				8CA75AAD15563FEE00EE02AB /* User.h */,
+				8CA75AAE15563FEE00EE02AB /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8CA75B24155644CC00EE02AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75A9A15563FED00EE02AB /* NIBarrelPopover.h */,
+				8CA75A9B15563FED00EE02AB /* NIBarrelPopover.m */,
+				8CA75A9C15563FED00EE02AB /* NIDoorwayPopover.h */,
+				8CA75A9D15563FED00EE02AB /* NIDoorwayPopover.m */,
+				8CA75A9E15563FED00EE02AB /* NIHomeViewController.h */,
+				8CA75A9F15563FED00EE02AB /* NIHomeViewController.m */,
+				8CA75AA015563FED00EE02AB /* NILoginViewController.h */,
+				8CA75AA115563FED00EE02AB /* NILoginViewController.m */,
+				8CA75AA215563FED00EE02AB /* NIRegisterViewController.h */,
+				8CA75AA315563FEE00EE02AB /* NIRegisterViewController.m */,
+				8CA75AA415563FEE00EE02AB /* NISettingsViewController.h */,
+				8CA75AA515563FEE00EE02AB /* NISettingsViewController.m */,
+				8CA75AA615563FEE00EE02AB /* NISignpostPopover.h */,
+				8CA75AA715563FEE00EE02AB /* NISignpostPopover.m */,
+				8CA75AA815563FEE00EE02AB /* NIWebViewController.h */,
+				8CA75AA915563FEE00EE02AB /* NIWebViewController.m */,
+				8CA75B2C15565FE600EE02AB /* NISendMessagePopover.h */,
+				8CA75B2D15565FE800EE02AB /* NISendMessagePopover.m */,
+				8CA75BC41557FE0700EE02AB /* NINotificationsViewController.h */,
+				8CA75BC51557FE0700EE02AB /* NINotificationsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CA75B251556451C00EE02AB /* javascript */ = {
+			isa = PBXGroup;
+			children = (
+				8CA75B141556404F00EE02AB /* crypto-md5.js */,
+				8CA75B151556404F00EE02AB /* nifunctions.js */,
+				8CA75B161556404F00EE02AB /* toolbar.js */,
+			);
+			name = javascript;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CA75A5115563ED900EE02AB /* Nova Initia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA75A9015563EDB00EE02AB /* Build configuration list for PBXNativeTarget "Nova Initia" */;
+			buildPhases = (
+				8CA75A4E15563ED900EE02AB /* Sources */,
+				8CA75A4F15563ED900EE02AB /* Frameworks */,
+				8CA75A5015563ED900EE02AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nova Initia";
+			productName = "Nova Initia";
+			productReference = 8CA75A5215563ED900EE02AB /* Nova Initia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CA75A7D15563EDB00EE02AB /* Nova InitiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CA75A9315563EDB00EE02AB /* Build configuration list for PBXNativeTarget "Nova InitiaTests" */;
+			buildPhases = (
+				8CA75A7915563EDB00EE02AB /* Sources */,
+				8CA75A7A15563EDB00EE02AB /* Frameworks */,
+				8CA75A7B15563EDB00EE02AB /* Resources */,
+				8CA75A7C15563EDB00EE02AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CA75A8415563EDB00EE02AB /* PBXTargetDependency */,
+			);
+			name = "Nova InitiaTests";
+			productName = "Nova InitiaTests";
+			productReference = 8CA75A7E15563EDB00EE02AB /* Nova InitiaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CA75A4915563ED900EE02AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 8CA75A4C15563ED900EE02AB /* Build configuration list for PBXProject "Nova Initia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8CA75A4715563ED900EE02AB;
+			productRefGroup = 8CA75A5315563ED900EE02AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CA75A5115563ED900EE02AB /* Nova Initia */,
+				8CA75A7D15563EDB00EE02AB /* Nova InitiaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CA75A5015563ED900EE02AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA75B171556404F00EE02AB /* crypto-md5.js in Resources */,
+				8CA75B181556404F00EE02AB /* nifunctions.js in Resources */,
+				8CA75B191556404F00EE02AB /* toolbar.js in Resources */,
+				8CA75A6115563ED900EE02AB /* InfoPlist.strings in Resources */,
+				8CA75A9715563F3900EE02AB /* MainStoryboard.storyboard in Resources */,
+				8CA75AFB1556403A00EE02AB /* barrel.ico in Resources */,
+				8CA75AFC1556403A00EE02AB /* barrelFailed.png in Resources */,
+				8CA75AFD1556403A00EE02AB /* barrelFound.png in Resources */,
+				8CA75AFE1556403A00EE02AB /* barrelSet.png in Resources */,
+				8CA75AFF1556403A00EE02AB /* doorway.ico in Resources */,
+				8CA75B001556403A00EE02AB /* doorwayFailed.png in Resources */,
+				8CA75B041556403A00EE02AB /* sg.ico in Resources */,
+				8CA75B051556403A00EE02AB /* shield.ico in Resources */,
+				8CA75B061556403A00EE02AB /* shield.png in Resources */,
+				8CA75B071556403A00EE02AB /* shieldFailed.png in Resources */,
+				8CA75B081556403A00EE02AB /* sign.ico in Resources */,
+				8CA75B091556403A00EE02AB /* signpostBlocked.png in Resources */,
+				8CA75B0A1556403A00EE02AB /* signpostFailed.png in Resources */,
+				8CA75B0B1556403A00EE02AB /* signpostSet.png in Resources */,
+				8CA75B0C1556403A00EE02AB /* spider.ico in Resources */,
+				8CA75B0D1556403A00EE02AB /* spiderFailed.png in Resources */,
+				8CA75B0E1556403A00EE02AB /* spiderSet.png in Resources */,
+				8CA75B0F1556403A00EE02AB /* spiderTriggered.png in Resources */,
+				8CA75B101556403A00EE02AB /* trap.ico in Resources */,
+				8CA75B111556403A00EE02AB /* trapFailed.png in Resources */,
+				8CA75B121556403A00EE02AB /* trapSet.png in Resources */,
+				8CA75B131556403A00EE02AB /* trapTriggered.png in Resources */,
+				8CA75B27155649D400EE02AB /* doorwaySet.png in Resources */,
+				8CA75B2A15564D6B00EE02AB /* homeBottom.png in Resources */,
+				8CA75B351556E3AF00EE02AB /* homeTop.png in Resources */,
+				8CA75B9315571A9500EE02AB /* defaultAvatar.png in Resources */,
+				8CA75B9915572EE200EE02AB /* background.png in Resources */,
+				8CA75B9D1557360800EE02AB /* background500.png in Resources */,
+				8CA75B9E1557360800EE02AB /* background700.png in Resources */,
+				8CA75BAC1557809700EE02AB /* Default.png in Resources */,
+				8CA75BAF1557815400EE02AB /* Default@2x.png in Resources */,
+				8CA75BB1155781CF00EE02AB /* backgroundSmall.png in Resources */,
+				8CA75BB3155787F600EE02AB /* backgroundLarge.png in Resources */,
+				00BA868615580B4800F3C400 /* launchIcon57.png in Resources */,
+				00BA868915580B4C00F3C400 /* launchIconRetina.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA75A7B15563EDB00EE02AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA75A8A15563EDB00EE02AB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CA75A7C15563EDB00EE02AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CA75A4E15563ED900EE02AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA75A6315563ED900EE02AB /* main.m in Sources */,
+				8CA75A6715563EDA00EE02AB /* NIAppDelegate.m in Sources */,
+				8CA75AB015563FEF00EE02AB /* LoginModel.m in Sources */,
+				8CA75AB115563FEF00EE02AB /* NIBarrelPopover.m in Sources */,
+				8CA75AB215563FEF00EE02AB /* NIDoorwayPopover.m in Sources */,
+				8CA75AB315563FEF00EE02AB /* NIHomeViewController.m in Sources */,
+				8CA75AB415563FEF00EE02AB /* NILoginViewController.m in Sources */,
+				8CA75AB515563FEF00EE02AB /* NIRegisterViewController.m in Sources */,
+				8CA75AB615563FEF00EE02AB /* NISettingsViewController.m in Sources */,
+				8CA75AB715563FEF00EE02AB /* NISignpostPopover.m in Sources */,
+				8CA75AB815563FEF00EE02AB /* NIWebViewController.m in Sources */,
+				8CA75AB915563FEF00EE02AB /* NOVA_INITIA.m in Sources */,
+				8CA75ABA15563FEF00EE02AB /* User.m in Sources */,
+				8CA75AD51556401200EE02AB /* NSObject+SBJson.m in Sources */,
+				8CA75AD61556401200EE02AB /* SBJsonParser.m in Sources */,
+				8CA75AD71556401200EE02AB /* SBJsonStreamParser.m in Sources */,
+				8CA75AD81556401200EE02AB /* SBJsonStreamParserAccumulator.m in Sources */,
+				8CA75AD91556401200EE02AB /* SBJsonStreamParserAdapter.m in Sources */,
+				8CA75ADA1556401200EE02AB /* SBJsonStreamParserState.m in Sources */,
+				8CA75ADB1556401200EE02AB /* SBJsonStreamWriter.m in Sources */,
+				8CA75ADC1556401200EE02AB /* SBJsonStreamWriterAccumulator.m in Sources */,
+				8CA75ADD1556401200EE02AB /* SBJsonStreamWriterState.m in Sources */,
+				8CA75ADE1556401200EE02AB /* SBJsonTokeniser.m in Sources */,
+				8CA75ADF1556401200EE02AB /* SBJsonUTF8Stream.m in Sources */,
+				8CA75AE01556401200EE02AB /* SBJsonWriter.m in Sources */,
+				8CA75B2E15565FE900EE02AB /* NISendMessagePopover.m in Sources */,
+				8CA75BC61557FE0800EE02AB /* NINotificationsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA75A7915563EDB00EE02AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA75A8D15563EDB00EE02AB /* Nova_InitiaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CA75A8415563EDB00EE02AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CA75A5115563ED900EE02AB /* Nova Initia */;
+			targetProxy = 8CA75A8315563EDB00EE02AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CA75A5F15563ED900EE02AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CA75A6015563ED900EE02AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8CA75A8815563EDB00EE02AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CA75A8915563EDB00EE02AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CA75A8E15563EDB00EE02AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brian Dragunas (BP7F65JUQZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brian Dragunas (BP7F65JUQZ)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "074D17B0-A915-4622-AFE0-A5EEFF4D470A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "074D17B0-A915-4622-AFE0-A5EEFF4D470A";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8CA75A8F15563EDB00EE02AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Brian Dragunas (BP7F65JUQZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brian Dragunas (BP7F65JUQZ)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "074D17B0-A915-4622-AFE0-A5EEFF4D470A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "074D17B0-A915-4622-AFE0-A5EEFF4D470A";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CA75A9115563EDB00EE02AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova Initia/Nova Initia-Prefix.pch";
+				INFOPLIST_FILE = "Nova Initia/Nova Initia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8CA75A9215563EDB00EE02AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova Initia/Nova Initia-Prefix.pch";
+				INFOPLIST_FILE = "Nova Initia/Nova Initia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8CA75A9415563EDB00EE02AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nova Initia.app/Nova Initia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova Initia/Nova Initia-Prefix.pch";
+				INFOPLIST_FILE = "Nova InitiaTests/Nova InitiaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8CA75A9515563EDB00EE02AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Nova Initia.app/Nova Initia";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nova Initia/Nova Initia-Prefix.pch";
+				INFOPLIST_FILE = "Nova InitiaTests/Nova InitiaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CA75A4C15563ED900EE02AB /* Build configuration list for PBXProject "Nova Initia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA75A8E15563EDB00EE02AB /* Debug */,
+				8CA75A8F15563EDB00EE02AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CA75A9015563EDB00EE02AB /* Build configuration list for PBXNativeTarget "Nova Initia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA75A9115563EDB00EE02AB /* Debug */,
+				8CA75A9215563EDB00EE02AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CA75A9315563EDB00EE02AB /* Build configuration list for PBXNativeTarget "Nova InitiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA75A9415563EDB00EE02AB /* Debug */,
+				8CA75A9515563EDB00EE02AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CA75A4915563ED900EE02AB /* Project object */;
+}
